@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".AuthActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/top_view"
+           ></View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offre d'emploi"
+            android:textColor="#fff"
+            android:layout_alignBottom="@id/top_view"
+            android:textSize="24dp"
+            android:id="@+id/txt_head_login"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/wave"
+            android:layout_below="@id/top_view"></View>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/computer"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/title_text_login"
+        android:text="Bienvenue"
+        android:textSize="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:padding="20dp"
+        android:orientation="vertical" >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/edtmail"
+            android:drawableTint="@color/colorPrimary"
+            android:background="@drawable/edt_shape"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_email_black_24dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/edt_shape"
+            android:padding="10dp"
+            android:hint="Mot de passe"
+            android:textColor="@color/colorPrimary"
+            android:inputType="textPassword"
+            android:id="@+id/edtpass"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableTint="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:drawableRight="@drawable/ic_lock_black_24dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Se connecter"
+            android:id="@+id/btn_login"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/whiteroundedshape"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S'inscrire"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sign_up_btn"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/edt_shape"/>
+    </LinearLayout>
+
+
+</LinearLayout>

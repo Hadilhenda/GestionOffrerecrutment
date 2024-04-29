@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OffreAffichageActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:text="  Titre"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/txt_titre_details"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:text="  date debut"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/txt_date_debut_details" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:text="  date fin"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/txt_date_fin_details" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorAccent"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:background="#e1e1e1e1"
+            android:text="  categorie"
+            android:lineSpacingExtra="10dp"
+            android:id="@+id/txt_description_details"
+            android:layout_marginBottom="8dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Postuler"
+            android:id="@+id/btn_postuler"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/whiteroundedshape"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Supprimer le offre"
+            android:id="@+id/btn_spprimer_offre"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/whiteroundedshape"
+            android:visibility="gone"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whiteroundedshape"
+            android:text="Liste Candidate"
+            android:layout_marginTop="10px"
+            android:id="@+id/liste_candidates"
+            android:textColor="#fff"
+            android:visibility="gone"/>
+         </LinearLayout>
+
+
+</LinearLayout>
